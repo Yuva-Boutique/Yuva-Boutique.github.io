@@ -1,76 +1,656 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Yuva-Botique</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+	<!-- Latest compiled and minified CSS -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<body>
-	<style type="text/css">
-		@media  (max-width:500px){
-			#first{
-				font-size: 20px;
-			}
-		}
-		@media  (min-width:500px){
-			#first{
-				font-size: 30px;
-			}
-		}
-		
-	</style>
-	<div id="first">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center fixed-top">
-			<p style="margin-top: 10px;">Yuva-Boutique</p>
+
+<body  >
+<style>
+ .sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+#right{
+float:right;
+padding-top:5px;
+font-size:30px;
+margin-right:20px;
+position:relative;
+display:flex;
+}
+#center1{
+text-align:center;
+margin-top:40px;
+}
+#g1{
+font-size:10px;
+}
+.navbar-toggler{
+font-size:10px;
+}
+
+#div1 {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+}
+@media screen and (min-width:990px){
+#first{
+display:none;
+}
+}
+@media screen and (max-width:990px){
+#second{
+display:none;
+}
+}
+</style>
+ 
+<div id="first" >
+<div >
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-center"  >
+<h2>YUVA</h2>
+<br>
+<p style="margin-top: 20px;margin-left: 10px;">Fashions & Boutique</p>
 </nav>
-	</div>
-	<br><br><br><br>
+</div>
+<br><br><br>
+<!---------------------------navbar top ends here----------------->
+<div class="container-fluid"  >
+<div class="row"  >
 
-<div class="container-fluid">
-<div class="row" style="margin-top: 20px;">
-	<div class="col-3">
-	</div>
-	<div class="col-6">
-		<div class="card" style="width: 100%;">
-  <div class="card-body">
-  	   <center><h5 class="card-title">Work Designs</h5></center> 
 
-  	<div>
-    <img src="w1.jpg" style=" width:100%;height:350px;object-fit:contain;" alt=""  >
+<div class="card " style="width: 100%;" >
+  <div  style="padding: 10px 0px 0px 10px;background-color: white">
+  <div >
+  <div style="float:left;">
+    <h4 ><b>Prem sai vittal</b><h4>
+  <p style="font-size:13px;color:grey;">on Machine Learning</p>
+  </div>
+  
+</div>
+  </div>
+  <div  >
+    <div style="padding: 0px 10px 0px 10px ;">
+    <h5 class="card-title" style="text-align:left;font-size: 15px;">Special title treatment qegl nqskldhqeilsdkjcb .jkelreer44  jqegivhdwv</h5>
+  </div>
+  <div style="background-color:#f3f3f3;padding: 0px;" >
+    <img src="prem.jpg" style=" width:100%;height:350px;object-fit:contain;" alt=""  >
+</div>
+<div style="padding: 5px 5px 0px 5px;">
+      <p style="text-align:justify;font-size: 13px;" >With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+</div>
+  </div>
+  <div class="card-footer">
+  <div>
+    <a style="float:left;" ><a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='far fa-comment'></i></a><span>&nbsp;25</span>&nbsp;&nbsp;
+  <a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='far fa-share-square'></i></a>&nbsp;&nbsp;
+<a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;" ><i class=" fas fa-angle-double-down"></i></a>
 
-  	</div>
-<center><a href="" class="btn btn-primary" style="margin-top: 20px;">View More</a></center>
+</a>
+
+<!-----------------------------------optioons------------------->
+<a style="float:right;">2 days ago</a>
+
+  </div>
+  <div style="width:100%;">
+   <div class="collapse" id="collapseExample4"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Send Too...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Send Post</button>
+  </div>
+  <script>
+  
+  </script>
+  <br>
+  
+</div>
+</div> 
+<div class="collapse" id="collapseExample5"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <div>
+<a>Save post&nbsp;<i class="fa fa-bookmark-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a>Report post <i class="fa fa-warning"></i></a>
+
+</div> 
+</div>
+</div>
+  <div class="collapse" id="collapseExample"  >
+ 
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" id="a" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary  enableOnInput " id="button1" style="border-radius: 1.5rem;margin-left:5px;outline:0;"  >Post Comment</button>
+  </div>
+  
+  
+</div>
+
+<hr>
+  <div>
+  <strong>prem sai vittal</strong>
+  <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi prem sai hgry3rgq9udh uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud</p>
+<a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+<div class="callout callout-default" style="padding: 10px 0px 0px 10px;">
+  <strong>prem sai 2030</strong>
+    <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi  uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud this is prem sai vittal kancherla reporting u sir </p>
+
+  <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+  <div class="collapse" id="collapseExample3"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+</div>
+ 
+ <div class="collapse" id="collapseExample1"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+<hr>
+   <strong>prem sai vittal</strong>
+  <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi uiwfgwbcjkdlbke iyweg2ibwjs hdfgeywfqo hgry3rgq9udh uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud
+ <a href=" https://bbbootstrap.com/snippets/social-media-icons-footer-54412302" ></a></p>
+<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+  <div class="collapse" id="collapseExample2"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+</div>
+<hr>
+<!------------------------view all comments box ---------->
+       <button  class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"  name="login_btn">View All Comments</button>
+
+  </div>
   </div>
 </div>
-<!----------------------2nd one--------->
-<div class="card" style="width: 100%;">
-  <div class="card-body">
-  	   <center><h5 class="card-title">Umbrilla Dress Designs</h5></center> 
+</div>
+<!--second card------->
+<div class="card "  >
+  <div  style="padding: 10px 0px 0px 10px;background-color: white">
+  <div >
+  <div style="float:left;">
+    <h4 ><b>Prem sai vittal</b><h4>
+  <p style="font-size:13px;color:grey;">on Machine Learning</p>
+  </div>
+  
+</div>
+  </div>
+  <div  >
+    <div style="padding: 0px 10px 0px 10px ;">
+    <h5 class="card-title" style="text-align:left;font-size: 15px;">Special title treatment qegl nqskldhqeilsdkjcb .jkelreer44  jqegivhdwv</h5>
+  </div>
+  <div style="background-color:#f3f3f3;padding: 0px;" >
+    <img src="pfi2.jpg" style=" width:100%;height:350px;object-fit:contain;" alt=""  >
+</div>
+<div style="padding: 5px 5px 0px 5px;">
+      <p style="text-align:justify;font-size: 13px;" >With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+</div>
+  </div>
+  <div class="card-footer">
+  <div>
+    <a style="float:left;" ><a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='far fa-comment'></i></a><span>&nbsp;25</span>&nbsp;&nbsp;
+  <a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='far fa-share-square'></i></a>&nbsp;&nbsp;
+<a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;" ><i class=" fas fa-angle-double-down"></i></a>
 
-  	<div>
-    <img src="ub1.jpg" style=" width:100%;height:350px;object-fit:contain;" alt=""  >
+</a>
 
-  	</div>
-<center><a href="" class="btn btn-primary" style="margin-top: 20px;">View More</a></center>
+<!-----------------------------------optioons------------------->
+<a style="float:right;">2 days ago</a>
+
+  </div>
+  <div style="width:100%;">
+   <div class="collapse" id="collapseExample4"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Send Too...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Send Post</button>
+  </div>
+  <script>
+  
+  </script>
+  <br>
+  
+</div>
+</div> 
+<div class="collapse" id="collapseExample5"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <div>
+<a>Save post&nbsp;<i class="fa fa-bookmark-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a>Report post <i class="fa fa-warning"></i></a>
+
+</div> 
+</div>
+</div>
+  <div class="collapse" id="collapseExample"  >
+ 
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" id="a" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary  enableOnInput " id="button1" style="border-radius: 1.5rem;margin-left:5px;outline:0;"  >Post Comment</button>
+  </div>
+  
+  
+</div>
+
+<hr>
+  <div>
+  <strong>prem sai vittal</strong>
+  <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi prem sai hgry3rgq9udh uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud</p>
+<a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+<div class="callout callout-default" style="padding: 10px 0px 0px 10px;">
+  <strong>prem sai 2030</strong>
+    <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi  uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud this is prem sai vittal kancherla reporting u sir </p>
+
+  <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+  <div class="collapse" id="collapseExample3"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+</div>
+ 
+ <div class="collapse" id="collapseExample1"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+<hr>
+   <strong>prem sai vittal</strong>
+  <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi uiwfgwbcjkdlbke iyweg2ibwjs hdfgeywfqo hgry3rgq9udh uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud
+ <a href=" https://bbbootstrap.com/snippets/social-media-icons-footer-54412302" ></a></p>
+<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+  <div class="collapse" id="collapseExample2"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+</div>
+<hr>
+<!------------------------view all comments box ---------->
+       <button  class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"  name="login_btn">View All Comments</button>
+
+  </div>
   </div>
 </div>
-	</div>
-	<div class="col-3">
-	</div>
+</div>
+<!--row ends here------->
 </div>
 
- </div>
 
 
+</div>
+<br><br><br>
+
+<!-------------------------navbar bottom --------------->
+<!-- As a heading -->
+<nav class="container-fluid fixed-bottom bg-light" >
+  <div  class="row " style="color:grey;text-align:center;margin-top:10px;margin-bottom:5px;">
+<div class="col-2">
+<a href="prem1.html"><i class="fa fa-home" style="font-size:25px;color:red;"></i></a>
 
 
+</div>
+<div class="col-3">
+<a href="notifications.php"><i class="fa fa-bell" style="font-size:20px;color:grey;"></i></a>
+</div>
+<div class="col-2">
+<a href="publish.php" ><i class="material-icons" style="color:grey;">border_color</i></a>
 
+</div>
+<div class="col-3">
+<a href="about.php"> <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:20px;color:grey;"></i></a>
 
-	<script type="text/javascript">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</script>
+</div>
+<div class="col-2">
+<a href="publish.php" ><i class="fas fa-users" aria-hidden="true" style="font-size:20px;color:grey;"></i></a>
+
+</div>
+</div>
+</nav>
+</div>
+<!----------------------------------------------------------------second starts now------------------------->
+<div id="second" >
+<style>
+#div2{
+  background-color: #f3f3f3;
+  height:40px;
+  width:100%;
+
+}
+td{
+padding:10px;
+}
+table{
+position:fixed;
+text-align:center;
+}
+.card{
+margin-top:10px;
+}
+.card-footer{
+	padding-top:10px;
+	padding-bottom:5px;
+}
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 0px solid grey;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+</style>
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#" style="font-size:35px;">PFI</a>
+  
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item " style="margin-left:30%;" >
+        <a class="nav-link" href="home1.php" style="  border-bottom: 2px solid red;"><i class="fa fa-home" style="font-size:15px;color: red;">&nbsp;Home</i> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="notifications.php" ><i class="fa fa-bell" style="font-size:15px;color:grey;">&nbsp;Notifications</i></a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link " href="publish.php" ><i class="fa fa-edit" style="font-size:15px;color:grey;">&nbsp;Publish</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="about.php" s><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:15px;color:grey;">&nbsp;About</i></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="community.php" s><i class="fas fa-users" aria-hidden="true" style="font-size:15px;color:grey;">&nbsp;Community</i></a>
+      </li>
+    </ul>
+	
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  
+</nav>
+<br>
+<br>
+<br>
+<br>
+<div class="container"  >
+<div class="row" >
+
+<div class="col-3"   >
+<div  style="float:left;margin-left:70px;">
+<table >
+<tr style="margin-top:20px;">
+<th style="  border-bottom: 2px solid black;color:black;" ><span><<<</span>&nbsp;More&nbsp;<span>>>></span></th>
+</tr>
+
+<tr>
+<td><a href="published.php" style="color:black;text-decoration: none;" >My Ideas </a></td>
+</tr>
+<tr>
+<td><a href="my_pages.php" style="color:black;text-decoration: none;">My Pages </a></td>
+</tr>
+<tr>
+<td><a href="following.php" style="color:black;text-decoration: none;" >Following </a></td>
+</tr>
+<tr>
+<td><a href="saved_posts.php" style="color:black;text-decoration: none;" >Saved Posts </a></td>
+</tr>
+<tr>
+<td><a href="about_pfi.php" target="_blank" style="color:black;text-decoration: none;">About PFI </a></td>
+</tr>
+<tr>
+<td><a href="help.php" style="color:black;text-decoration: none;" target="_blank" >Help </a></td>
+</tr>
+<tr>
+<td><a href="faqs.php" style="color:black;text-decoration: none;" target="_blank" >FAQ'S </a></td>
+</tr>
+<tr>
+<td><a href="report.php" style="color:black;text-decoration: none;" target="_blank" >Report </a></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="col-6" >
+<div class="card "  >
+  <div  style="padding: 10px 0px 0px 10px;background-color: white">
+  <div >
+  <div style="float:left;">
+    <h4 ><b>Prem sai vittal</b><h4>
+  <p style="font-size:13px;color:grey;">on Machine Learning</p>
+  </div>
+  
+</div>
+  </div>
+  <div  >
+    <div style="padding: 0px 10px 0px 10px ;">
+    <h5 class="card-title" style="text-align:left;font-size: 15px;">Special title treatment qegl nqskldhqeilsdkjcb .jkelreer44  jqegivhdwv</h5>
+  </div>
+  <div style="background-color:#f3f3f3;padding: 0px;" >
+    <img src="prem.jpg" style=" width:100%;height:350px;object-fit:contain;" alt=""  >
+</div>
+<div style="padding: 5px 5px 0px 5px;">
+      <p style="text-align:justify;font-size: 13px;" >With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+</div>
+  </div>
+  <div class="card-footer">
+  <div>
+    <a style="float:left;" ><a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='far fa-comment'></i></a><span>&nbsp;25</span>&nbsp;&nbsp;
+  <a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='far fa-share-square'></i></a>&nbsp;&nbsp;
+<a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;" ><i class=" fas fa-angle-double-down"></i></a>
+
+</a>
+
+<!-----------------------------------optioons------------------->
+<a style="float:right;">2 days ago</a>
+
+  </div>
+  <div style="width:100%;">
+   <div class="collapse" id="collapseExample4"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Send Too...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Send Post</button>
+  </div>
+  <script>
+  
+  </script>
+  <br>
+  
+</div>
+</div> 
+<div class="collapse" id="collapseExample5"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <div>
+<a>Save post&nbsp;<i class="fa fa-bookmark-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a>Report post <i class="fa fa-warning"></i></a>
+
+</div> 
+</div>
+</div>
+  <div class="collapse" id="collapseExample"  >
+ 
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" id="a" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary  enableOnInput " id="button1" style="border-radius: 1.5rem;margin-left:5px;outline:0;"  >Post Comment</button>
+  </div>
+  
+  
+</div>
+
+<hr>
+  <div>
+  <strong>prem sai vittal</strong>
+  <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi prem sai hgry3rgq9udh uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud</p>
+<a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+<div class="callout callout-default" style="padding: 10px 0px 0px 10px;">
+  <strong>prem sai 2030</strong>
+    <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi  uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud this is prem sai vittal kancherla reporting u sir </p>
+
+  <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+  <div class="collapse" id="collapseExample3"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+</div>
+ 
+ <div class="collapse" id="collapseExample1"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+<hr>
+   <strong>prem sai vittal</strong>
+  <p style="text-align: justify;font-size: 13px;">jfg4uifdjcdi uiwfgwbcjkdlbke iyweg2ibwjs hdfgeywfqo hgry3rgq9udh uieg2udhdfgeywfqo hgry3rgq9udh uieg2ud
+ <a href=" https://bbbootstrap.com/snippets/social-media-icons-footer-54412302" ></a></p>
+<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:black;"><i class='fa fa-reply' ></i></a>&nbsp;<span>20</span>
+  <div class="collapse" id="collapseExample2"  >
+
+<div class="input-group mb-3" style="width:100%;margin-top:10px;">
+  <input type="text" class="form-control" style="border-radius: 1rem;margin-right:5px;float:left;outline:0;" placeholder="Comment Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary " style="border-radius: 1.5rem;margin-left:5px;outline:0;" >Post Comment</button>
+  </div>
+  <br>
+  
+</div>
+</div> 
+</div>
+<hr>
+<!------------------------view all comments box ---------->
+       <button  class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"  name="login_btn">View All Comments</button>
+
+  </div>
+  </div>
+</div>
+</div>
+<!-------------------------------end card------------------------>
+</div>
+<div class="col-3">
+<table>
+<tr>
+<th style="  border-bottom: 2px solid black;"><a ><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Intrested In Topics </a></th>
+</tr>
+<tr><td>Machine Learning</td><tr>
+<tr><td>A.I</td><tr>
+<tr><td>Agriculture</td><tr>
+<tr><td>Deep Learning</td><tr>
+<tr><td>Python</td><tr>
+<tr><td>Java</td><tr>
+<tr><td>C Programming</td><tr>
+
+</table>
+
+</div>
+</div>
+</div>
+<!------------------------------------------------------second ends here ------------------------------------>
+<!----------------------------------------------script starts ------------------------------------>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script>
+
+ $("#navbar").sticky({
+ stickyClass: ['navbar-dark', 'mdb-color'],
+ });
+
+</script>
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+}
+</script>
+
 </body>
 </html>
